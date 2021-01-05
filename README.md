@@ -1,7 +1,19 @@
 
-# Ứng dụng học sâu trong cảnh báo nguy cơ mắc bệnh tim mạch vành
+# <center> **Ứng dụng học máy trong cảnh báo nguy cơ mắc bệnh tim mạch vành** </center>
 
-Mô hình dự đoán khả năng bệnh tim mạch vành trong vòng 10 năm, dựa trên dữ liệu từ Nghiên cứu Tim Framingham (FHS).
+Phát triển mô hình học máy cảnh báo nguy cơ mắc bệnh tim mạch vành trong vòng 10 năm, dựa trên dữ liệu từ Nghiên cứu Tim Framingham (FHS).
+
+## Đội dự thi
+
+Đội 11 Lý: Nguyễn Võ Toàn Thịnh, Trần Long Hưng
+
+Giáo viên bảo trợ: ThS. Thới Ngọc Tuấn Ngọc
+
+Người hướng dẫn khoa học: ThS. Cao Xuân Nam
+
+## Địa điểm dự thi
+
+Trường Phổ Thông Năng Khiếu, Quận 5, TP.HCM
 
 ## Dữ liệu
 
@@ -10,17 +22,8 @@ https://www.kaggle.com/amanajmera1/framingham-heart-study-dataset
 ## Thuật toán sử dụng
 
 Logistic Regression Classifier
+
 Random Forest Classifier
-
-## Đội dự thi
-
-Đội 11 Lý: Nguyễn Võ Toàn Thịnh, Trần Long Hưng
-Giáo viên bảo trợ: ThS. Thới Ngọc Tuấn Ngọc
-Người hướng dẫn khoa học: ThS. Cao Xuân Nam
-
-## Địa điểm dự thi
-
-Trường Phổ Thông Năng Khiếu, Quận 5, TP.HCM
 
 ## Đóng góp
 
