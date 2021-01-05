@@ -1,5 +1,5 @@
 
-# Mô hình dự đoán bệnh tim mạch vành
+# Ứng dụng học sâu trong cảnh báo nguy cơ mắc bệnh tim mạch vành
 
 Mô hình dự đoán khả năng bệnh tim mạch vành trong vòng 10 năm, dựa trên dữ liệu từ Nghiên cứu Tim Framingham (FHS).
 
