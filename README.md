@@ -17,7 +17,7 @@ Trường Phổ Thông Năng Khiếu, Quận 5, TP.HCM
 
 ## Dữ liệu
 
-https://www.kaggle.com/amanajmera1/framingham-heart-study-dataset
+https://biolincc.nhlbi.nih.gov/studies/fhs/
 
 ## Thuật toán sử dụng
 
