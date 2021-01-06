@@ -7,7 +7,7 @@ Phát triển mô hình học máy cảnh báo nguy cơ mắc bệnh tim mạch 
 
 Đội 11 Lý: Nguyễn Võ Toàn Thịnh, Trần Long Hưng
 
-Giáo viên bảo trợ: ThS. Thới Ngọc Tuấn Ngọc
+Giáo viên bảo trợ: ThS. Thới Ngọc Tuấn Quốc
 
 Người hướng dẫn khoa học: ThS. Cao Xuân Nam
 
