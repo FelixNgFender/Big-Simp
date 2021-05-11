@@ -103,34 +103,90 @@
                               <h1>Coronary Heart Disease Predictor</h1>
                               <div class="login">
                                   <form action="{{ url_for('predict')}}" method="post">
-                                    <label for="male" colo>Male?  </label>
-                                    <select id="male" name="male", placeholder="male", required="male">
-                                      <option value="0">yea</option>
-                                      <option value="1">nope</option>
-                                    </select>
-                                    <br>
-                                    <br>
-                                    <label for="age" colo>Age:  </label>
-                                    <input type="text" name="age" placeholder="age" required="required">
-                                    <br>
-                                    <br>
-                                    <label for="Education">Education:  </label>
-                                    <select id="education" name="education", placeholder="education", required="required">
-                                      <option value="0">0</option>
-                                      <option value="1">1</option>
-                                      <option value="2">2</option>
-                                      <option value="3">3</option>
-                                      <option value="4">4</option>
-                                    </select>
-                                    <br>
-                                    <br>
-                                    <label for="currentSmoker">Smoker:  </label>
-                                    <select id="currentSmoker" name="currentSmoker", placeholder="currentSmoker", required="required">
-                                      <option value="0">No</option>
-                                      <option value="1">Yes</option>
-                                    </select>
-                                    <br>
-                                    <br>
+                                    <label for="male" colo>male:  </label>
+      <select id="male" name="male", placeholder="male", required="required">
+        <option value="0">0</option>
+        <option value="1">1</option>
+      </select>
+      <br>
+      <br>
+      <label for="age">age:  </label>
+      <input type="text" name="age" placeholder="age" required="required">
+      <br>
+      <br>
+      <label for="education">education:  </label>
+      <select id="education" name="education", placeholder="education", required="required">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+      </select>
+      <br>
+      <br>
+      <label for="currentSmoker">currentSmoker:  </label>
+      <select id="currentSmoker" name="currentSmoker", placeholder="currentSmoker", required="required">
+        <option value="0">0</option>
+        <option value="1">1</option>
+      </select>
+      <br>
+      <br>
+      <label for="cigsPerDay">cigsPerDay:  </label>
+      <input type="text" name="cigsPerDay" placeholder="cigsPerDay" required="required">
+      </select>
+      <br>
+      <br>
+      <label for="BPMeds">BPMeds:  </label>
+      <select id="BPMeds" name="BPMeds", placeholder="BPMeds", required="required">
+        <option value="0">0</option>
+        <option value="1">1</option>
+      </select>
+      <br>
+      <br>
+      <label for="prevalentStroke">prevalentStroke:  </label>
+      <select id="prevalentStroke" name="prevalentStroke", placeholder="prevalentStroke", required="required">
+        <option value="0">0</option>
+        <option value="1">1</option>
+      </select>
+      <br>
+      <br>
+      <label for="prevalentHyp">prevalentHyp:  </label>
+      <select id="prevalentHyp" name="prevalentHyp", placeholder="prevalentHyp", required="required">
+        <option value="0">0</option>
+        <option value="1">1</option>
+      </select>
+      <br>
+      <br>
+      <label for="diabetes">diabetes:  </label>
+      <select id="diabetes" name="diabetes", placeholder="diabetes", required="required">
+        <option value="0">0</option>
+        <option value="1">1</option>
+      </select>
+      <br>
+      <br>
+      <label for="totChol">totChol:  </label>
+      <input type="text" name="totChol" placeholder="totChol" required="required">
+      <br>
+      <br>
+      <label for="sysBP">sysBP:  </label>
+      <input type="text" name="sysBP" placeholder="sysBP" required="required">
+      <br>
+      <br>
+      <label for="diaBP">diaBP:  </label>
+      <input type="text" name="diaBP" placeholder="diaBP" required="required">
+      <br>
+      <br>
+      <label for="BMI">BMI:  </label>
+      <input type="text" name="BMI" placeholder="BMI" required="required">
+      <br>
+      <br>
+      <label for="heartRate">heartRate:  </label>
+      <input type="text" name="heartRate" placeholder="heartRate" required="required">
+      <br>
+      <br>
+      <label for="glucose">glucose:  </label>
+      <input type="text" name="glucose" placeholder="glucose" required="required">
+      <br>
+      <br>
                                     <button type="submit" class="btn btn-primary btn-block btn-large">Predict Risk</button>
                                   </form>
                                   <br>
