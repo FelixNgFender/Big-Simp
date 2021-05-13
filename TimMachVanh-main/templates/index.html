@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+     <title>Công cụ cảnh báo bệnh tim mạch vành</title>
+
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+     <meta name="description" content="">
+     <meta name="keywords" content="">
+     <meta name="team" content="">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+     <link rel="stylesheet" href="css/vegas.min.css">
+     <link rel="stylesheet" href="css/font-awesome.min.css">
+
+     <!-- MAIN CSS -->
+     <link rel="stylesheet" href="css/templatemo-style.css">
+
+</head>
+<body>
+
+     <!-- PRE LOADER -->
+     <section class="preloader">
+          <div class="spinner">
+
+               <span class="spinner-rotate"></span>
+               
+          </div>
+     </section>
+
+
+     <!-- GRID LINE -->
+    <section class="grid">
+         <div class="container">
+            <div class="row">
+
+              <div class="col-md-2 col-sm-2">
+                <div class="grid-line"></div>
+              </div>
+              <div class="col-md-2 col-sm-2">
+                <div class="grid-line"></div>
+              </div>
+              <div class="col-md-2 col-sm-2">
+                <div class="grid-line"></div>
+              </div>
+              <div class="col-md-2 col-sm-2">
+                <div class="grid-line"></div>
+              </div>
+              <div class="col-md-2 col-sm-2">
+                <div class="grid-line"></div>
+              </div>
+
+            </div>
+         </div>
+    </section>
+
+
+    <div class="menu-bg"></div>
+    <div class="menu-burger">☰</div>
+
+    <div class="menu-items">
+       <div class="container">
+         <div class="row">
+           <div class="col-md-offset-2 col-md-4 col-sm-6">
+            <h1>Info</h1>
+             <ul class="menu">
+                <li><a href="#">Thông tin thêm</a></li>
+                <li><a href="#">Tư vấn</a></li>
+                <li><a href="#">sigma duck lmao</a></li>
+            </ul>
+           </div>
+
+           <div class="col-md-4 col-sm-6">
+             <address>
+               <h1>I hope u die lol</h1>
+             </address>
+           </div> 
+
+           <div class="col-md-12 col-sm-12">
+             <ul class="social-icon">
+              <li class="line"></li>
+               <li><a href="https://fb.com/templatemo" class="fa fa-facebook"></a></li>
+               <li><a href="#" class="fa fa-twitter"></a></li>
+               <li><a href="https://plus.google.com/+templatemo" class="fa fa-google"></a></li>
+               <li><a href="#" class="fa fa-instagram"></a></li>
+             </ul>
+           </div>
+         </div>
+       </div>
+    </div>
+
+
+     <!-- HOME -->
+     <section id="home">
+        <div class="overlay"></div>
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-12 col-sm-12">
+                         <div class="home-info">
+                              <h1>Coronary Heart Disease Predictor</h1>
+                              <div class="login">
+                                  <form action="{{ url_for('predict')}}" method="post">
+                                    <label for="male" colo>male  </label>
+                                    <select id="male" name="male", placeholder="male", required="male">
+                                      <option value="0">Female</option>
+                                      <option value="1">Male</option>
+                                    </select>
+                                    <br>
+                                    <br>
+                                    <label for="age" colo>age:  </label>
+                                    <input type="text" name="age" placeholder="age" required="required">
+                                    <br>
+                                    <br>
+                                    <label for="education">education:  </label>
+                                    <select id="education" name="education", placeholder="education", required="required">
+                                      <option value="1">1</option>
+                                      <option value="2">2</option>
+                                      <option value="3">3</option>
+                                      <option value="4">4</option>
+                                    </select>
+                                    <br>
+                                    <br>
+                                    <label for="currentSmoker">currentSmoker:  </label>
+                                    <select id="currentSmoker" name="currentSmoker", placeholder="currentSmoker", required="required">
+                                      <option value="0">No</option>
+                                      <option value="1">Yes</option>
+                                    </select>
+                                    <br>
+                                    <br>
+                                    <label for="cigsPerDay" colo>cigsPerDay:  </label>
+                                    <input type="text" name="cigsPerDay" placeholder="cigsPerDay" required="required">
+                                    <br>
+                                    <br>
+                                    <label for="BPMeds">BPMeds:  </label>
+                                    <select id="BPMeds" name="BPMeds", placeholder="BPMeds", required="required">
+                                      <option value="0">No</option>
+                                      <option value="1">Yes</option>
+                                    </select>
+                                    <br>
+                                    <br>
+                                    <label for="prevalentStroke">prevalentStroke:  </label>
+                                    <select id="prevalentStroke" name="prevalentStroke", placeholder="prevalentStroke", required="required">
+                                      <option value="0">No</option>
+                                      <option value="1">Yes</option>
+                                    </select>
+                                    <br>
+                                    <br>
+                                    <label for="prevalentHyp">prevalentHyp:  </label>
+                                    <select id="prevalentHyp" name="prevalentHyp", placeholder="prevalentHyp", required="required">
+                                      <option value="0">No</option>
+                                      <option value="1">Yes</option>
+                                    </select>
+                                    <br>
+                                    <br>
+                                    <label for="diabetes">diabetes:  </label>
+                                    <select id="diabetes" name="diabetes", placeholder="diabetes", required="required">
+                                      <option value="0">No</option>
+                                      <option value="1">Yes</option>
+                                    </select>
+                                    <br>
+                                    <br>
+                                    <label for="totChol" colo>totChol:  </label>
+                                    <input type="text" name="totChol" placeholder="totChol" required="required">
+                                    <br>
+                                    <br>
+                                    <label for="sysBP" colo>sysBP:  </label>
+                                    <input type="text" name="sysBP" placeholder="sysBP" required="required">
+                                    <br>
+                                    <br>
+                                    <label for="diaBP" colo>diaBP:  </label>
+                                    <input type="text" name="diaBP" placeholder="diaBP" required="required">
+                                    <br>
+                                    <br>
+                                    <label for="BMI" colo>BMI:  </label>
+                                    <input type="text" name="BMI" placeholder="BMI" required="required">
+                                    <br>
+                                    <br>
+                                    <label for="heartRate" colo>heartRate:  </label>
+                                    <input type="text" name="heartRate" placeholder="heartRate" required="required">
+                                    <br>
+                                    <br>
+                                    <label for="glucose" colo>glucose:  </label>
+                                    <input type="text" name="glucose" placeholder="glucose" required="required">
+                                    <br>
+                                    <br>
+                                    <button type="submit" class="btn btn-primary btn-block btn-large">Predict Risk</button>
+                                  </form>
+                                  <br>
+                                  <br>
+                                  <h2>
+                                  {{ prediction_text }}
+                                  </h2>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </section>
+
+     <!-- SCRIPTS -->
+     <script src="js/jquery.js"></script>
+     <script src="js/bootstrap.min.js"></script>
+     <script src="js/vegas.min.js"></script>
+     <script src="js/init.js"></script>
+     <script src="js/custom.js"></script>
+
+</body>
+</html>
