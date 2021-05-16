@@ -25,8 +25,8 @@
 <body id="home" data-spy="scroll" data-target=".navbar-collapse">
 	<!-- start slideshow -->
 	<div id="stage">
-		<a title="Coronary Heart Disease Predictor"><img src="/static/images/slider-image01.jpg" width="1919" height="845" ></a>
-		<a title="Coronary Heart Disease Predictor"><img src="/static/images/slider-image02.jpg" width="1919" height="845" ></a>
+		<a title="Công cụ chẩn đoán nguy cơ mắc bệnh tim mạch vành"><img src="/static/images/slider-image01.jpg" width="1919" height="845" ></a>
+		<a title="Công cụ chẩn đoán nguy cơ mắc bệnh tim mạch vành"><img src="/static/images/slider-image02.jpg" width="1919" height="845" ></a>
 	</div>
 	<!-- end slideshow -->
 
@@ -35,13 +35,13 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-					<h1 class="text-uppercase">About this tool</h1>
+					<h1 class="text-uppercase">Cơ chế hoạt động</h1>
 				</div>
 				<div class="col-md-6 col-sm-6">					
-					<h3 class="text-uppercase padding-bottom-10">Machine Learning</h3>
-					<p>Utilizes <a rel="nofollow" href="https://en.wikipedia.org/wiki/Random_forest" target="_parent">Random Forest</a> and <a rel="nofollow" href="https://biolincc.nhlbi.nih.gov/studies/fhs/" target="_parent">this data</a>.</p>
-                    <p><a rel="nofollow" href="https://en.wikipedia.org/wiki/Coronary_artery_disease" target="_parent">Coronary heart disease</a> also called coronary heart disease, ischemic heart disease, or simply heart disease, involves the reduction of blood flow to the heart muscle due to build-up of plaque (atherosclerosis) in the arteries of the heart. It is the most common of the cardiovascular diseases.</p>
-					<p>Proin enim sem, ultricies sit amet convallis nec, sodales quis augue. Duis consequat felis ac justo luctus, a cursus tellus pharetra. In ullamcorper gravida enim id pulvinar.</p>
+					<h3 class="text-uppercase padding-bottom-10">Máy học (Machine Learning)</h3>
+					<p>Sử dụng <a rel="nofollow" href="https://en.wikipedia.org/wiki/Random_forest" target="_parent"> thuật toán Random Forest</a> được tối ưu qua <a rel="nofollow" href="https://docs.google.com/document/d/1D-vGnUWygOsgPHFpXkX10pcCNJTGjBUo56t8npzsjLI/edit?usp=sharing" target="_parent">nghiên cứu của nhóm dự thi</a> và <a rel="nofollow" href="https://biolincc.nhlbi.nih.gov/studies/fhs/" target="_parent">bộ dữ liệu FHS</a>.</p>
+                    <p>Hệ thống sẽ ghi nhận các thông số được người dùng nhập vào, sau đó thực hiện tính toán dựa vào mô hình Random Forest đã lưu trước đó và cho ra kết quả dự đoán.</p>
+					<p><a rel="nofollow" href="https://en.wikipedia.org/wiki/Coronary_artery_disease" target="_parent">Bệnh tim mạch vành</a>, hay còn gọi là bệnh tim thiếu máu cục bộ liên quan tới sự giảm thiểu lượng máu chảy tới cơ tim do sự tắc nghẽn tiểu cầu trong các động mạch của tim (xơ vữa động mạch). Căn bệnh này thuộc diện phổ biến nhất trong các loại bệnh tim. </p>
 				</div>
 				<div class="col-md-6 col-sm-6">
 					<img src="/static/images/about-img1.png" class="img-responsive img-bordered img-about" alt="about img">
@@ -55,102 +55,102 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<h2 class="text-uppercase text-center">Lorem ipsum</h2>
+					<h2 class="text-uppercase text-center">CÔNG CỤ</h2>
 					<hr>
 				</div>
 				<form action="{{ url_for('predict')}}" method="post" role="form">
 					<div class="col-md-2"></div>
 					<div class="col-md-8">
 							<div class="col-md-4 col-sm-4">
-								<label for="male" colo>male  </label>
+								<label for="male" colo>Giới tính  </label>
 		                        <select id="male" class="form-control" name="male", placeholder="male", required="male">
-		                          <option value="0">Female</option>
-		                          <option value="1">Male</option>
+		                          <option value="0">Nữ</option>
+		                          <option value="1">Nam</option>
 		                        </select>
 		                        <br>
 
-		                        <label for="age" colo>age:  </label>
-		                        <input type="text" class="form-control" name="age" placeholder="age" required="required">
+		                        <label for="age" colo>Tuổi tác  </label>
+		                        <input type="text" class="form-control" name="age" placeholder="Tuổi" required="required">
 		                        <br>
 
-		                        <label for="education">education:  </label>
+		                        <label for="education">Trình độ học vấn  </label>
 		                        <select id="education" class="form-control" name="education", placeholder="education", required="required">
-		                          <option value="1">1</option>
-		                          <option value="2">2</option>
-		                          <option value="3">3</option>
-		                          <option value="4">4</option>
+		                          <option value="1">Cấp 3</option>
+		                          <option value="2">Tốt nghiệp Cấp 3</option>
+		                          <option value="3">Cao đẳng/Đại học</option>
+		                          <option value="4">Tốt nghiệp Đại học</option>
 		                        </select>
 		                        <br>
 
-		                        <label for="currentSmoker">currentSmoker:  </label>
+		                        <label for="currentSmoker">Có hút thuốc?  </label>
 		                        <select id="currentSmoker" class="form-control" name="currentSmoker", placeholder="currentSmoker", required="required">
-		                          <option value="0">No</option>
-		                          <option value="1">Yes</option>
+		                          <option value="0">Không</option>
+		                          <option value="1">Có</option>
 		                        </select>
 		                        <br>
 
-		                        <label for="cigsPerDay" colo>cigsPerDay:  </label>
-		                        <input type="text" class="form-control" name="cigsPerDay" placeholder="cigsPerDay" required="required">
+		                        <label for="cigsPerDay" colo>Số điếu thuốc mỗi ngày  </label>
+		                        <input type="text" class="form-control" name="cigsPerDay" placeholder="Số điếu" required="required">
 		                        <br>
 		                    </div>
 		                    <div class="col-md-4 col-sm-4">
-		                        <label for="BPMeds">BPMeds:  </label>
+		                        <label for="BPMeds">Có dùng thuốc huyết áp?  </label>
 		                        <select id="BPMeds" class="form-control" name="BPMeds", placeholder="BPMeds", required="required">
-		                          <option value="0">No</option>
-		                          <option value="1">Yes</option>
+		                          <option value="0">Không</option>
+		                          <option value="1">Có</option>
 		                        </select>
 		                        <br>
 
-		                        <label for="prevalentStroke">prevalentStroke:  </label>
+		                        <label for="prevalentStroke">Tiền sử đột quỵ  </label>
 		                        <select id="prevalentStroke" class="form-control" name="prevalentStroke", placeholder="prevalentStroke", required="required">
-		                          <option value="0">No</option>
-		                          <option value="1">Yes</option>
+		                          <option value="0">Không</option>
+		                          <option value="1">Có</option>
 		                        </select>
 		                        <br>
 
-		                        <label for="prevalentHyp">prevalentHyp:  </label>
+		                        <label for="prevalentHyp">Huyết áp cao  </label>
 		                        <select id="prevalentHyp" class="form-control" name="prevalentHyp", placeholder="prevalentHyp", required="required">
-		                          <option value="0">No</option>
-		                          <option value="1">Yes</option>
+		                          <option value="0">Không</option>
+		                          <option value="1">Có</option>
 		                        </select>
 		                        <br>
 
-		                        <label for="diabetes">diabetes:  </label>
+		                        <label for="diabetes">Béo phì </label>
 		                        <select id="diabetes" class="form-control" name="diabetes", placeholder="diabetes", required="required">
-		                          <option value="0">No</option>
-		                          <option value="1">Yes</option>
+		                          <option value="0">Không</option>
+		                          <option value="1">Có</option>
 		                        </select>
 		                        <br>
 
-		                        <label for="totChol" colo>totChol:  </label>
-		                        <input type="text" class="form-control" name="totChol" placeholder="totChol" required="required">
+		                        <label for="totChol" colo>Chỉ số cholesterol toàn phần  </label>
+		                        <input type="text" class="form-control" name="totChol" placeholder="mg/dL" required="required">
 		                        <br>
 		                    </div>
 							<div class="col-md-4 col-sm-4">
-		                        <label for="sysBP" colo>sysBP:  </label>
-		                        <input type="text" class="form-control" name="sysBP" placeholder="sysBP" required="required">
+		                        <label for="sysBP" colo>Huyết áp tâm thu  </label>
+		                        <input type="text" class="form-control" name="sysBP" placeholder="mmHg" required="required">
 		                        <br>
 		                        
-		                        <label for="diaBP" colo>diaBP:  </label>
-		                        <input type="text" class="form-control" name="diaBP" placeholder="diaBP" required="required">
+		                        <label for="diaBP" colo>Huyết áp tâm trương  </label>
+		                        <input type="text" class="form-control" name="diaBP" placeholder="mmHg" required="required">
 		                        <br>
 
-		                        <label for="BMI" colo>BMI:  </label>
+		                        <label for="BMI" colo>Chỉ số khối cơ thể (BMI)  </label>
 		                        <input type="text" class="form-control" name="BMI" placeholder="BMI" required="required">
 		                        <br>
 		                        
-		                        <label for="heartRate" colo>heartRate:  </label>
-		                        <input type="text" class="form-control" name="heartRate" placeholder="heartRate" required="required">
+		                        <label for="heartRate" colo>Nhịp tim thất  </label>
+		                        <input type="text" class="form-control" name="heartRate" placeholder="Số nhịp trên 1 phút" required="required">
 		                        <br>
 
-		                        <label for="glucose" colo>glucose:  </label>
-		                        <input type="text" class="form-control" name="glucose" placeholder="glucose" required="required">
+		                        <label for="glucose" colo>Chỉ số Glucose  </label>
+		                        <input type="text" class="form-control" name="glucose" placeholder="mg/dL" required="required">
 		                        <br>
 							</div>
 					</div>
 					<div class="col-md-2"></div>
 					<div class="col-md-12">
-						<button type="submit" class="form-control">Predict Risk</button>
+						<button type="submit" class="form-control">Dự đoán</button>
 						<h2 class="text-uppercase text-center">{{prediction_text}}</h2>
 					</div>
 
@@ -168,34 +168,32 @@
 			<div class="row">
 				<div class="col-md-2"></div>
 				<div class="col-md-4 col-sm-4">
-					<h3 class="text-uppercase">Contacts</h3>
+					<h3 class="text-uppercase">Liên hệ</h3>
 					<p>
 						<i class="fa fa-phone"></i> 
-						<a href="tel:010-020-0340" class="contact-link">010-020-0340</a>, 
-						<a href="tel:080-090-0660" class="contact-link">080-090-0660</a>
+						<a href="093-413-6549" class="contact-link">093-413-6549</a>
 					</p>
 					<p>
 					<i class="fa fa-envelope-o"></i> 
-                    	<a href="mailto:hello@company.com" class="contact-link">hello@someone.com</a>
+                    	<a href="mailto:ngthinh302@gmail.com" class="contact-link">ngthinh302@gmail.com</a>
                     </p>
 				</div>
 				<div class="col-md-4 col-sm-4">
-					<h3 class="text-uppercase">Sources</h3>
+					<h3 class="text-uppercase">Thông tin thêm</h3>
 					<p><i class="fa fa-book"></i> 
 						<a class="contact-link" rel="nofollow" 
                         	href="https://en.wikipedia.org/wiki/Coronary_artery_disease" target="_blank">Wikipedia</a>
                     </p>
                     <p><i class="fa fa-book"></i> 
                     	<a class="contact-link" rel="nofollow" 
-                        	href="https://biolincc.nhlbi.nih.gov/studies/fhs/" target="_blank">FHS's Data</a>
+                        	href="https://biolincc.nhlbi.nih.gov/studies/fhs/" target="_blank">Dữ liệu FHS</a>
                     </p>
 			  	</div>
 				<div class="col-md-12">
 					<hr>
 					<ul class="social-icon">
-						<li><a href="#" class="fa fa-facebook"></a></li>
-						<li><a href="#" class="fa fa-google"></a></li>
-						<li><a href="#" class="fa fa-github"></a></li>
+						<li><a href="https://www.facebook.com/profile.php?id=100013551768676" class="fa fa-facebook"></a></li>
+						<li><a href="https://github.com/FelixNgFender/TimMachVanh" class="fa fa-github"></a></li>
 					</ul>
 				</div>
 			</div>
