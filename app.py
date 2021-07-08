@@ -20,7 +20,13 @@ def predict():
 
     int_features = [int(x) for x in request.form.values()]
     final_features = [np.array(int_features)]
-    prediction = model.predict_proba(final_features)
+
+    pred = predict_model(model, pd.DataFrame(data=final_features], 
+                                             columns=pd.Index(['male', 'age', 'education', 'currentSmoker', 'cigsPerDay', 'BPMeds',
+                                                               'prevalentStroke', 'prevalentHyp', 'diabetes', 'totChol', 'sysBP',
+                                                               'diaBP', 'BMI', 'heartRate', 'glucose'],
+                                                                dtype='object')))
+    prediction = pred["Score"][0] if pred["Label"][0] == "1.0" else 1 - pred["Score"][0]
 
     return render_template("index.html", prediction_text=f'Khả năng mắc bệnh Tim mạch vành trong 10 năm tới là {prediction[0][0] * 100:.2f}%')
 
