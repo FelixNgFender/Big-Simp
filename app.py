@@ -21,7 +21,7 @@ def predict():
     int_features = [int(x) for x in request.form.values()]
     final_features = [np.array(int_features)]
 
-    pred = predict_model(model, pd.DataFrame(data=final_features], 
+    pred = predict_model(model, pd.DataFrame(data=[final_features], 
                                              columns=pd.Index(['male', 'age', 'education', 'currentSmoker', 'cigsPerDay', 'BPMeds',
                                                                'prevalentStroke', 'prevalentHyp', 'diabetes', 'totChol', 'sysBP',
                                                                'diaBP', 'BMI', 'heartRate', 'glucose'],
