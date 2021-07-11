@@ -25,4 +25,4 @@ sklearn==0.0
 statsmodels==0.12.2
 threadpoolctl==2.1.0
 Werkzeug==2.0.0
-pip install pycaret
+pycaret==1.0.0
