@@ -62,7 +62,9 @@
 		} else {
 			var res = uniform(10, 20);
 		}
-		document.getElementById("prediction-result").innerHTML = res.toFixed(2).concat("%");
+		document.getElementById("prediction-result").innerHTML = ("Khả năng mắc bệnh Tim mạch vành trong 10 năm tới là: ").concat(res.toFixed(2).concat("%"));
+		var button = document.getElementById("prediction-button");
+		button.remove()
 	}
 
 	</script>
@@ -196,7 +198,7 @@
 					</div>
 					<div class="col-md-2"></div>
 					<div class="col-md-12">
-						<button type="submit" class="form-control">Dự đoán</button>
+						<button type="submit" class="form-control" id="prediction-button">Dự đoán</button>
 						<h2 class="text-uppercase text-center" id="prediction-result">{{prediction_text}}</h2>
 					</div>
 
