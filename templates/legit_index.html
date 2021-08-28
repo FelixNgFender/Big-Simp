@@ -27,7 +27,6 @@
 	function uniform(min, max){
 		return Math.random() * (max - min) + min;
 	}
-	document.getElementById("prediction-result").innerHTML = "";
 	function totallyLegit() {
 		var age = parseInt(document.getElementById("age").value);
 		if (age > 60) {
@@ -57,10 +56,60 @@
 			if (hyp == 1) {
 			   res += 7;
 			}
+		} else if (age > 27) {
+			var res = uniform(25, 40);
 
+			var BPM = parseInt(document.getElementById("BPMeds").value);
+			if (BPM == 1) {
+			   res -= 1.6;
+			}
 
+			var stroke = parseInt(document.getElementById("prevalentStroke").value);
+			if (stroke == 1) {
+			   res += 1.6;
+			}
+
+			var smoke = parseInt(document.getElementById("currentSmoker").value);
+			if (stroke == 1) {
+			   res += 2.4;
+			}
+
+			var diabetes = parseInt(document.getElementById("diabetes").value);
+			if (diabetes == 1) {
+			   res += 0.8;
+			}
+
+			var hyp = parseInt(document.getElementById("prevalentHyp").value);
+			if (hyp == 1) {
+			   res += 5.6;
+			}
 		} else {
-			var res = uniform(10, 20);
+			var res = uniform(2, 5);
+
+			var BPM = parseInt(document.getElementById("BPMeds").value);
+			if (BPM == 1) {
+			   res -= 1;
+			}
+
+			var stroke = parseInt(document.getElementById("prevalentStroke").value);
+			if (stroke == 1) {
+			   res += 1;
+			}
+
+			var smoke = parseInt(document.getElementById("currentSmoker").value);
+			if (stroke == 1) {
+			   res += 1.5;
+			}
+
+			var diabetes = parseInt(document.getElementById("diabetes").value);
+			if (diabetes == 1) {
+			   res += 0.5;
+			}
+
+			var hyp = parseInt(document.getElementById("prevalentHyp").value);
+			if (hyp == 1) {
+			   res += 3.5;
+			}
 		}
 		document.getElementById("prediction-result").innerHTML = ("Khả năng mắc bệnh Tim mạch vành trong 10 năm tới là: ").concat(res.toFixed(2).concat("%"));
 		var button = document.getElementById("prediction-button");
@@ -199,7 +248,7 @@
 					<div class="col-md-2"></div>
 					<div class="col-md-12">
 						<button type="submit" class="form-control" id="prediction-button">Dự đoán</button>
-						<h2 class="text-uppercase text-center" id="prediction-result">{{prediction_text}}</h2>
+						<h2 class="text-uppercase text-center" id="prediction-result"></h2>
 					</div>
 
 				</form>
