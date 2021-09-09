@@ -19,8 +19,8 @@ def home():
 def predict():
 
     int_features = [int(x) for x in request.form.values()]
-    final_features = [np.array(int_features)]
-    prediction = model.predict_proba(final_features)
+    normed_features = sklearn.preprocessing.normalize([inp], axis=1)
+    prediction = model.predict_proba(normed_features)
 
     return render_template("index.html", prediction_text=f'Khả năng mắc bệnh Tim mạch vành trong 10 năm tới là {prediction[0][0] * 100:.2f}%')
 
