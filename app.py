@@ -1,12 +1,6 @@
-import numpy as np
 from flask import Flask, request, jsonify, render_template
 import pickle
-from sklearn import preprocessing
-from sklearn.model_selection import train_test_split
-from sklearn import metrics
-from sklearn.metrics import confusion_matrix
-import statsmodels.api as sm
-from sklearn import linear_model
+from sklearn
 
 app = Flask(__name__)
 model = pickle.load(open('trained_model.pkl', 'rb'))
