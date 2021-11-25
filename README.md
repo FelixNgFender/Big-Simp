@@ -5,7 +5,7 @@ Phát triển mô hình học máy cảnh báo nguy cơ mắc bệnh tim mạch 
 
 ## Đội dự thi
 
-Đội 11 Lý: Nguyễn Võ Toàn Thịnh, Trần Long Hưng
+Đội 11 Lý: Nguyễn Võ Toàn Thịnh, Trần Long Hưng, Lê Thạch Phước Hưng
 
 Giáo viên bảo trợ: ThS. Thới Ngọc Tuấn Quốc
 
